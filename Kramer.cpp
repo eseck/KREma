@@ -16,25 +16,62 @@ void InsertarDos(D* Ejercicio){
             cin.clear();
             cin.ignore();
             cout << "Valor Invalido" << endl;
+
         }
-        else{
+        else {
+            Ejercicio->x = x;
+        }
         cout << "Ingrese el valor que acompañara al Y para la primera ecuacion" << endl;
         cin >> y;
+        if(cin.fail()) {
+            cin.clear();
+            cin.ignore();
+            cout << "Valor Invalido" << endl;
+
+        }
+        else {
+            Ejercicio->y = y;
+        }
         cout << "Ingrese el valor de la ecuacion" << endl;
         cin >> r;
+        if(cin.fail()) {
+            cin.clear();
+            cin.ignore();
+            cout << "Valor Invalido" << endl;
+        }
+        else{
+            Ejercicio->r = r;
+        }
         cout << "Ingrese el valor que acompañara al X para la segunda ecuacion" << endl;
         cin >> X;
+        if(cin.fail()) {
+            cin.clear();
+            cin.ignore();
+            cout << "Valor Invalido" << endl;
+        }
+        else{
+            Ejercicio->X = X;
+        }
         cout << "Ingrese el valor que acompañara al Y para la segunda ecuacion" << endl;
         cin >> Y;
+        if(cin.fail()) {
+            cin.clear();
+            cin.ignore();
+            cout << "Valor Invalido" << endl;
+        }
+        else {
+            Ejercicio->Y = Y;
+        }
         cout << "Ingrese el valor de la segunda ecuacion" << endl;
         cin >> R;
-        Ejercicio->x = x;
-        Ejercicio->y = y;
-        Ejercicio->r = r;
-        Ejercicio->X = X;
-        Ejercicio->Y = Y;
+        if(cin.fail()) {
+            cin.clear();
+            cin.ignore();
+            cout << "Valor Invalido" << endl;
+        }
+        else{
         Ejercicio->R = R;
-    }
+        }
 }
 void DesarrolloDos(D* Ejercicio) {
     //arrays para ordenar los valores
@@ -285,4 +322,3 @@ void Imprimir(C* Ejercicio){
     cout << "(" << (resultado[0]/resultado[4]) << "," << (resultado[1]/resultado[4]) << "," << (resultado[2]/resultado[4]) << "," << (resultado[3]/resultado[4]) << ")" << endl;
     cout << endl << endl;
 }
-
