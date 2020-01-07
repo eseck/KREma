@@ -322,3 +322,4 @@ void Imprimir(C* Ejercicio){
     cout << "(" << (resultado[0]/resultado[4]) << "," << (resultado[1]/resultado[4]) << "," << (resultado[2]/resultado[4]) << "," << (resultado[3]/resultado[4]) << ")" << endl;
     cout << endl << endl;
 }
+//Termino
