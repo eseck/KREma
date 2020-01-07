@@ -9,10 +9,15 @@ C* ejercicioCuatro =  new C;
 
 
 void InsertarDos(D* Ejercicio){
-    try {
-        float x, y, r, X, Y, R;
+        int x, y, r, X, Y, R;
         cout << "Ingrese el valor que acompañara al X para la primera ecuacion" << endl;
         cin >> x;
+        if(cin.fail()) {
+            cin.clear();
+            cin.ignore();
+            cout << "Valor Invalido" << endl;
+        }
+        else{
         cout << "Ingrese el valor que acompañara al Y para la primera ecuacion" << endl;
         cin >> y;
         cout << "Ingrese el valor de la ecuacion" << endl;
@@ -29,9 +34,6 @@ void InsertarDos(D* Ejercicio){
         Ejercicio->X = X;
         Ejercicio->Y = Y;
         Ejercicio->R = R;
-    }
-    catch (invalid_argument){
-        cout<<"skere";
     }
 }
 void DesarrolloDos(D* Ejercicio) {
