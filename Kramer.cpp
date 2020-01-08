@@ -1,10 +1,6 @@
 //
 #include "Kramer.h"
 
-D* ejercicioDos = new D;
-T* ejercicioTres = new T;
-C* ejercicioCuatro =  new C;
-
 void InsertarDos(D* Ejercicio){
         int x, y, r, X, Y, R, ValorPrograma;
         ValorPrograma=0;
