@@ -21,6 +21,7 @@ typedef struct cuatroXcuatro{
     float DetY;
     float DetZ;
     float DetW;
+    float ValorPrograma;
 }C;
 void InsertarDos(D* Ejercicio);
 void DesarrolloDos(D* Ejercicio);

@@ -334,31 +334,205 @@ void DesarrolloTres(T* Ejercicio){
 }
 //Funciones4X4
 void InsertarCuatro(C* Ejercicio){
-    float x,y,z,w,r,X,Y,Z,W,R,aX,aY,aZ,aW,aR,ax,ay,az,aw,ar;
+    float x,y,z,w,r,X,Y,Z,W,R,aX,aY,aZ,aW,aR,ax,ay,az,aw,ar,ValorPrograma;
+    ValorPrograma=0;
     cout << "Ingrese el valor que acompañara al X para la primera ecuacion"<<endl;cin >> x;
-    cout << "Ingrese el valor que acompañara al Y para la primera ecuacion"<<endl;cin >> y;
-    cout << "Ingrese el valor que acompañara al Z para la primera ecuacion"<<endl;cin >> z;
-    cout << "Ingrese el valor que acompañara al W para la primera ecuacion"<<endl;cin >> w;
-    cout << "Ingrese el valor de la ecuacion"<<endl;cin >> r;
-    cout << "Ingrese el valor que acompañara al X para la segunda ecuacion"<<endl;cin >> X;
-    cout << "Ingrese el valor que acompañara al Y para la segunda ecuacion"<<endl;cin >> Y;
-    cout << "Ingrese el valor que acompañara al Z para la segunda ecuacion"<<endl;cin >> Z;
-    cout << "Ingrese el valor que acompañara al W para la segunda ecuacion"<<endl;cin >> W;
-    cout << "Ingrese el valor de la segunda ecuacion"<<endl;cin >> R;
-    cout << "Ingrese el valor que acompañara al X para la tercera ecuacion"<<endl;cin >> aX;
-    cout << "Ingrese el valor que acompañara al Y para la tercera ecuacion"<<endl;cin >> aY;
-    cout << "Ingrese el valor que acompañara al Z para la tercera ecuacion"<<endl;cin >> aZ;
-    cout << "Ingrese el valor que acompañara al W para la tercera ecuacion"<<endl;cin >> aW;
-    cout << "Ingrese el valor de la tercera ecuacion"<<endl;cin >> aR;
-    cout << "Ingrese el valor que acompañara al X para la cuarta ecuacion"<<endl;cin >> ax;
-    cout << "Ingrese el valor que acompañara al Y para la cuarta ecuacion"<<endl;cin >> ay;
-    cout << "Ingrese el valor que acompañara al Z para la cuarta ecuacion"<<endl;cin >> az;
-    cout << "Ingrese el valor que acompañara al W para la cuarta ecuacion"<<endl;cin >> aw;
-    cout << "Ingrese el valor para la cuarta ecuacion"<<endl;cin >> ar;
-    Ejercicio->z=z;Ejercicio->x=x;Ejercicio->y=y;Ejercicio->r=r;Ejercicio->w=w;
-    Ejercicio->W=W;Ejercicio->Z=Z;Ejercicio->X=X;Ejercicio->Y=Y;Ejercicio->R=R;
-    Ejercicio->aW=aW;Ejercicio->aZ=aZ;Ejercicio->aX=aX;Ejercicio->aY=aY;Ejercicio->aR=aR;
-    Ejercicio->ax=ax;Ejercicio->ay=ay;Ejercicio->aw=aw;Ejercicio->az=az;Ejercicio->ar=ar;
+    if(cin.fail()) {
+        cin.clear();
+        cin.ignore();
+        cout << "Valor Invalido" << endl;
+        ValorPrograma=1;
+        Ejercicio->ValorPrograma=ValorPrograma;
+    } else{
+        Ejercicio->x = x;
+    }
+    if (ValorPrograma != 1){
+        cout << "Ingrese el valor que acompañara al Y para la primera ecuacion"<<endl;cin >> y;
+        if(cin.fail()) {
+            cin.clear();
+            cin.ignore();
+            cout << "Valor Invalido" << endl;
+            ValorPrograma = 1;
+            Ejercicio->ValorPrograma = ValorPrograma;
+        } else{
+            Ejercicio->y=y;
+        }
+        if (ValorPrograma != 1){
+            cout << "Ingrese el valor que acompañara al Z para la primera ecuacion"<<endl;cin >> z;
+            if(cin.fail()) {
+                cin.clear();
+                cin.ignore();
+                cout << "Valor Invalido" << endl;
+                ValorPrograma = 1;
+                Ejercicio->ValorPrograma = ValorPrograma;
+            } else{
+                Ejercicio->z=z;
+            }
+            if  (ValorPrograma != 1){
+                cout << "Ingrese el valor que acompañara al W para la primera ecuacion"<<endl;cin >> w;
+                if(cin.fail()) {
+                    cin.clear();
+                    cin.ignore();
+                    cout << "Valor Invalido" << endl;
+                    ValorPrograma = 1;
+                    Ejercicio->ValorPrograma = ValorPrograma;
+                } else{
+                    Ejercicio->w=w;
+                }
+                if (ValorPrograma != 1){
+                    cout << "Ingrese el valor de la ecuacion"<<endl;cin >> r;
+                    if(cin.fail()) {
+                        cin.clear();
+                        cin.ignore();
+                        cout << "Valor Invalido" << endl;
+                        ValorPrograma = 1;
+                        Ejercicio->ValorPrograma = ValorPrograma;
+                    } else{
+                        Ejercicio->r=r;
+                    }
+                    if (ValorPrograma != 1){
+                        cout << "Ingrese el valor que acompañara al X para la segunda ecuacion"<<endl;cin >> X;
+                        if(cin.fail()) {
+                            cin.clear();
+                            cin.ignore();
+                            cout << "Valor Invalido" << endl;
+                            ValorPrograma = 1;
+                            Ejercicio->ValorPrograma = ValorPrograma;
+                        } else{
+                            Ejercicio->X=X;
+                        }
+                        if (ValorPrograma != 1){
+                            cout << "Ingrese el valor que acompañara al Y para la segunda ecuacion"<<endl;cin >> Y;
+                            if(cin.fail()) {
+                                cin.clear();
+                                cin.ignore();
+                                cout << "Valor Invalido" << endl;
+                                ValorPrograma = 1;
+                                Ejercicio->ValorPrograma = ValorPrograma;
+                            } else{
+                                Ejercicio->Y=Y;
+                            }
+                            if (ValorPrograma != 1){
+                                cout << "Ingrese el valor que acompañara al Z para la segunda ecuacion"<<endl;cin >> Z;
+                                if(cin.fail()) {
+                                    cin.clear();
+                                    cin.ignore();
+                                    cout << "Valor Invalido" << endl;
+                                    ValorPrograma = 1;
+                                    Ejercicio->ValorPrograma = ValorPrograma;
+                                } else{
+                                    Ejercicio->Z=Z;
+                                }
+                                if (ValorPrograma != 1){
+                                    cout << "Ingrese el valor que acompañara al W para la segunda ecuacion"<<endl;cin >> W;
+                                    if(cin.fail()) {
+                                        cin.clear();
+                                        cin.ignore();
+                                        cout << "Valor Invalido" << endl;
+                                        ValorPrograma = 1;
+                                        Ejercicio->ValorPrograma = ValorPrograma;
+                                    } else{
+                                        Ejercicio->W=W;
+                                    }
+                                    if (ValorPrograma != 1){
+                                        cout << "Ingrese el valor de la segunda ecuacion"<<endl;cin >> R;
+                                        if(cin.fail()) {
+                                            cin.clear();
+                                            cin.ignore();
+                                            cout << "Valor Invalido" << endl;
+                                            ValorPrograma = 1;
+                                            Ejercicio->ValorPrograma = ValorPrograma;
+                                        } else{
+                                            Ejercicio->R=R;
+                                        }
+                                        if (ValorPrograma != 1){
+                                            cout << "Ingrese el valor que acompañara al X para la tercera ecuacion"<<endl;cin >> aX;
+                                            if(cin.fail()) {
+                                                cin.clear();
+                                                cin.ignore();
+                                                cout << "Valor Invalido" << endl;
+                                                ValorPrograma = 1;
+                                                Ejercicio->ValorPrograma = ValorPrograma;
+                                            } else{
+                                                Ejercicio->aX=aX;
+                                            }
+                                            if (ValorPrograma != 1){
+                                                cout << "Ingrese el valor que acompañara al Y para la tercera ecuacion"<<endl;cin >> aY;
+                                                if(cin.fail()) {
+                                                    cin.clear();
+                                                    cin.ignore();
+                                                    cout << "Valor Invalido" << endl;
+                                                    ValorPrograma = 1;
+                                                    Ejercicio->ValorPrograma = ValorPrograma;
+                                                } else{
+                                                    Ejercicio->aY=aY;
+                                                }
+                                                if (ValorPrograma != 1){
+                                                    cout << "Ingrese el valor que acompañara al Z para la tercera ecuacion"<<endl;cin >> aZ;
+                                                    if(cin.fail()) {
+                                                        cin.clear();
+                                                        cin.ignore();
+                                                        cout << "Valor Invalido" << endl;
+                                                        ValorPrograma = 1;
+                                                        Ejercicio->ValorPrograma = ValorPrograma;
+                                                    } else{
+                                                        Ejercicio->aZ=aZ;
+                                                    }
+                                                    if (ValorPrograma != 1){
+                                                        cout << "Ingrese el valor que acompañara al W para la tercera ecuacion"<<endl;cin >> aW;
+                                                        if(cin.fail()) {
+                                                            cin.clear();
+                                                            cin.ignore();
+                                                            cout << "Valor Invalido" << endl;
+                                                            ValorPrograma = 1;
+                                                            Ejercicio->ValorPrograma = ValorPrograma;
+                                                        } else{
+                                                            Ejercicio->aW=aW;
+                                                        }
+                                                        if (ValorPrograma != 1){
+                                                            cout << "Ingrese el valor de la tercera ecuacion"<<endl;cin >> aR;
+                                                            if(cin.fail()) {
+                                                                cin.clear();
+                                                                cin.ignore();
+                                                                cout << "Valor Invalido" << endl;
+                                                                ValorPrograma = 1;
+                                                                Ejercicio->ValorPrograma = ValorPrograma;
+                                                            } else{
+                                                                Ejercicio->aR=aR;
+                                                            }
+                                                            if (ValorPrograma != 1){
+                                                                cout << "Ingrese el valor que acompañara al X para la cuarta ecuacion"<<endl;cin >> ax;
+                                                                if(cin.fail()) {
+                                                                    cin.clear();
+                                                                    cin.ignore();
+                                                                    cout << "Valor Invalido" << endl;
+                                                                    ValorPrograma = 1;
+                                                                    Ejercicio->ValorPrograma = ValorPrograma;
+                                                                } else{
+                                                                    Ejercicio->ax=ax;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        cout << "Ingrese el valor que acompañara al Y para la cuarta ecuacion"<<endl;cin >> ay;
+                        cout << "Ingrese el valor que acompañara al Z para la cuarta ecuacion"<<endl;cin >> az;
+                        cout << "Ingrese el valor que acompañara al W para la cuarta ecuacion"<<endl;cin >> aw;
+                        cout << "Ingrese el valor para la cuarta ecuacion"<<endl;cin >> ar;
+                    }
+                }
+
+            }
+        }
+        Ejercicio->ay=ay;Ejercicio->aw=aw;Ejercicio->az=az;Ejercicio->ar=ar;
+    }
+
 }
 void DesarrolloCuatroSistema(C* Ejercicio){
     //Determinante el sistema
