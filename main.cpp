@@ -32,15 +32,6 @@ int main() {
             case 3:
                 InsertarCuatro(ejercicioCuatro);
                 DesarrolloCuatroSistema(ejercicioCuatro);
-                DesarrolloCuatroX(ejercicioCuatro);
-                DesarrolloCuatroY(ejercicioCuatro);
-                DesarrolloCuatroZ(ejercicioCuatro);
-                DesarrolloCuatroW(ejercicioCuatro);
-                Imprimir(ejercicioCuatro);
-                break;
-
-            case 4:
-                cout << "Gracias por preferir nuestra Calculadora. Hasta pronto!!";
                 break;
             default:
                 cout << "Gracias por preferir nuestra Calculadora. Hasta pronto!!";

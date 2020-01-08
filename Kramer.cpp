@@ -245,6 +245,7 @@ void DesarrolloCuatroSistema(C* Ejercicio){
     cout<<"El determinante del sistema corresponde a: "<<ResultadoUno<<endl;
     Ejercicio->DetSistema=ResultadoUno;
     cout<<"El determinante del sistema es: "<< ResultadoUno<<endl;
+    DesarrolloCuatroX(Ejercicio);
 }
 void DesarrolloCuatroX(C* Ejercicio){
     float FilaUno[4] = {Ejercicio->r,Ejercicio->y,Ejercicio->z,Ejercicio->w};
@@ -267,6 +268,7 @@ void DesarrolloCuatroX(C* Ejercicio){
     float ResultadoX = ((FilaUno[0]*UnoDiagonal)+(FilaUno[1]*DosDiagonal*-1)+(FilaUno[2]*TresDiagonal*1)+(FilaUno[3]*CuatroDiagonal*-1));
     cout<<"El determinante de X es: "<< ResultadoX<<endl;
     Ejercicio->DetX=ResultadoX;
+    DesarrolloCuatroY(Ejercicio);
 }
 void DesarrolloCuatroY(C* Ejercicio){
     float FilaUno[4] = {Ejercicio->x,Ejercicio->r,Ejercicio->z,Ejercicio->w};
@@ -289,6 +291,7 @@ void DesarrolloCuatroY(C* Ejercicio){
     float ResultadoY = ((FilaUno[0]*UnoDiagonal)+(FilaUno[1]*DosDiagonal*-1)+(FilaUno[2]*TresDiagonal*1)+(FilaUno[3]*CuatroDiagonal*-1));
     cout<<"El Determinante de Y es: "<<ResultadoY<<endl;
     Ejercicio->DetY=ResultadoY;
+    DesarrolloCuatroZ(Ejercicio);
 }
 void DesarrolloCuatroZ(C* Ejercicio){
     float FilaUno[4] = {Ejercicio->x,Ejercicio->y,Ejercicio->r,Ejercicio->w};
@@ -311,6 +314,7 @@ void DesarrolloCuatroZ(C* Ejercicio){
     float ResultadoZ = ((FilaUno[0]*UnoDiagonal)+(FilaUno[1]*DosDiagonal*-1)+(FilaUno[2]*TresDiagonal*1)+(FilaUno[3]*CuatroDiagonal*-1));
     cout<<"El Determinante de Z es: "<<ResultadoZ<<endl;
     Ejercicio->DetZ=ResultadoZ;
+    DesarrolloCuatroW(Ejercicio);
 }
 void DesarrolloCuatroW(C* Ejercicio){
     float FilaUno[4] = {Ejercicio->x,Ejercicio->y,Ejercicio->z,Ejercicio->r};
@@ -333,6 +337,7 @@ void DesarrolloCuatroW(C* Ejercicio){
     float ResultadoUno = ((FilaUno[0]*UnoDiagonal)+(FilaUno[1]*DosDiagonal*-1)+(FilaUno[2]*TresDiagonal*1)+(FilaUno[3]*CuatroDiagonal*-1));
     cout<<"El Determinante W es: "<<ResultadoUno<<endl;
     Ejercicio->DetW=ResultadoUno;
+    Imprimir(Ejercicio);
 }
 void Imprimir(C* Ejercicio){
     float resultado[5] = {Ejercicio->DetX, Ejercicio->DetY, Ejercicio->DetZ,Ejercicio->DetW,Ejercicio->DetSistema};
