@@ -27,8 +27,15 @@ int main() {
                 }
             case 2:
                 InsertarTres(ejercicioTres);
-                DesarrolloTres(ejercicioTres);
-                break;
+                if ((ejercicioTres->ValorPrograma)!=1){
+                    DesarrolloTres(ejercicioTres);
+                    break;
+                }
+                else{
+                    cout<<endl;
+                    break;
+                }
+
             case 3:
                 InsertarCuatro(ejercicioCuatro);
                 DesarrolloCuatroSistema(ejercicioCuatro);

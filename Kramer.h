@@ -12,6 +12,7 @@ typedef struct tresXtres{
     float ResultadoX;
     float ResultadoY;
     float ResultadoZ;
+    float ValorPrograma;
 }T;
 typedef struct cuatroXcuatro{
     float x,y,z,w,r,X,Y,Z,W,R,aX,aY,aZ,aW,aR,ax,ay,az,aw,ar;
