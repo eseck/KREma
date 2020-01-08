@@ -5,6 +5,7 @@ typedef struct dosXdos{
     float x,y,r,X,Y,R;
     float ResultadoX;
     float ResultadoY;
+    float ValorPrograma;
 }D;
 typedef struct tresXtres{
     float x,y,z,r,X,Y,Z,R,aX,aY,aZ,aR;

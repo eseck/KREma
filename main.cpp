@@ -17,8 +17,14 @@ int main() {
             case 1:
                 // Desarrollo para un 2x2
                 InsertarDos(ejercicioDos);
-                DesarrolloDos(ejercicioDos);
-                break;
+                if ((ejercicioDos->ValorPrograma)!=1){
+                    DesarrolloDos(ejercicioDos);
+                    break;
+                }
+                else{
+                    cout<<endl;
+                    break;
+                }
             case 2:
                 InsertarTres(ejercicioTres);
                 DesarrolloTres(ejercicioTres);
