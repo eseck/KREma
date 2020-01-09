@@ -2,7 +2,6 @@
 #include "Kramer.h"
 using namespace std;
 //Declaraciones de Estructuras
-// cuando colocamos un string en el main o las funciones insertar,se ejecuta una sola linea de cout infinitamente
 int main() {
     int Tipo;
     D* ejercicioDos = new D;
@@ -35,11 +34,15 @@ int main() {
                     cout<<endl;
                     break;
                 }
-
             case 3:
                 InsertarCuatro(ejercicioCuatro);
-                DesarrolloCuatroSistema(ejercicioCuatro);
-                break;
+                if ((ejercicioCuatro->ValorPrograma)!=1){
+                    DesarrolloCuatroSistema(ejercicioCuatro);
+                    break;
+                } else{
+                    cout<<endl;
+                    break;
+                }
             default:
                 cout << "Gracias por preferir nuestra Calculadora. Hasta pronto!!";
                 Tipo= 4;
